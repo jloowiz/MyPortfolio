@@ -58,7 +58,7 @@ function About() {
         <div className="about-highlights">
           {[
             { title: 'Experience', value: '[x] Years' },
-            { title: 'Projects Completed', value: '3' }
+            { title: 'Projects Completed', value: '4' }
           ].map((item, index) => (
             <motion.div 
               key={index}

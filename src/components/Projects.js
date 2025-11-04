@@ -20,7 +20,7 @@ function Projects() {
       title: 'DriveVision',
       description: 'DriveVision is a Dockerized web application that allows users to simulate and evaluate fine-tuned object detection models YOLOv8 and SSD300 in the CARLA Simulator under various weather and lighting conditions. Users can choose the model, environment, and computation mode (CPU or GPU), then view a generated video showing detection results with bounding boxes, performance metrics, and inference speed.',
       fullDescription: 'DriveVision is an AI-powered web-based simulation platform developed as part of my thesis project. The system integrates CARLA Simulator with fine-tuned deep learning models to assess object detection performance in autonomous driving contexts. Users can choose between YOLOv8 and SSD300, test them under six environmental conditions (Clear Day, Foggy Day, Rainy Day, Clear Night, Foggy Night, Rainy Night), and select between CPU or GPU processing. After simulation, DriveVision automatically produces video outputs with labeled detections and generates detailed evaluation metrics, including Precision, Recall, F1-Score, IoU, mAP scores, and average inference speed (FPS). Fully Dockerized, the application ensures easy deployment, reproducibility, and scalability for research and experimentation.',
-      technologies: ['Python', 'React', 'Node.js',],
+      technologies: ['Python', 'React', 'JavaScript', 'CSS','Node.js'],
       githubLink: 'https://github.com/jloowiz/DriveVision.git',
       liveLink: '',
       features: [
@@ -61,6 +61,19 @@ function Projects() {
         'Fare Calculation',
         'User Reviews & Ratings',
         'Discount and Promo Code System'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Chicken Banana (Minesweeper Game)',
+      description: 'Chicken Banana is a React-based web game that combines classic minesweeper mechanics with a fun and engaging storyline. Players help a chicken navigate through a grid filled with hidden mines to reach its beloved banana, featuring colorful graphics and intuitive controls.',
+      fullDescription: 'Chicken Banana is a web-based game developed using React that offers a fresh take on the classic minesweeper gameplay. In this game, players assume the role of a chicken on a quest to find its beloved banana while avoiding hidden mines scattered across a grid. The game features vibrant and colorful graphics, creating an engaging and visually appealing experience. Players must use logic and strategy to uncover safe tiles, reveal numbers indicating adjacent mines, and ultimately guide the chicken to its goal. With intuitive controls and an entertaining storyline, Chicken Banana provides hours of fun for players of all ages.',
+      technologies: ['React', 'JavaScript', 'CSS',],
+      githubLink: '',
+      liveLink: '',
+      features: [
+        'Classic Minesweeper Gameplay',
+        'Colorful Graphics',
       ]
     },
   ];

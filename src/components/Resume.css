@@ -208,6 +208,28 @@ body.light-mode .cert-subtext {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* Download Resume Button */
+.download-resume-btn {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0 auto;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 200ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.download-resume-btn:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .resume-sections {

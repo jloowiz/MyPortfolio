@@ -111,6 +111,20 @@ function Resume() {
             </div>
           </motion.div>
         </div>
+
+        {/* View Resume Button */}
+        <motion.a 
+          href="https://drive.google.com/file/d/1ipo-XbYmV_Q4YtdTG7imBM5aN59j2ljH/view?usp=sharing" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-resume-btn"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+        >
+          View Full Resume
+        </motion.a>
       </motion.div>
     </section>
   );
