@@ -1,0 +1,39 @@
+/* ========== Footer - Minimalistic ========== */
+.footer {
+  position: relative;
+  padding: 2rem;
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+body.light-mode .footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+body.light-mode .footer-content p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-content p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,209 @@
+/* ========== Home Section Styles ========== */
+.home-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 80px 5vw;
+  z-index: 2;
+}
+
+.home-content {
+  max-width: 800px;
+  flex: 1;
+  text-align: center;
+  padding: 40px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  transition: all 400ms ease;
+}
+
+body.light-mode .home-content {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.name-container {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.hello-text {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: -56px;
+  margin-left: 40px;
+  line-height: 1;
+}
+
+body.light-mode .hello-text {
+  color: #000000;
+}
+
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  color: #ffffff;
+  background: none;
+  text-align: left;
+  line-height: 0.9;
+  white-space: normal;
+}
+
+body.light-mode .home-content h1 {
+  color: #000000;
+  background: none;
+  -webkit-text-fill-color: #000000;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+body.light-mode .tagline {
+  color: #000000;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.cta-buttons .btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.cta-buttons .btn-primary {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.cta-buttons .btn-primary:hover {
+  background: transparent;
+  color: #ffffff;
+}
+
+.cta-buttons .btn-secondary {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .cta-buttons .btn-primary {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+
+body.light-mode .cta-buttons .btn-primary:hover {
+  background: transparent;
+  color: #000000;
+}
+
+body.light-mode .cta-buttons .btn-secondary {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+body.light-mode .cta-buttons .btn-secondary:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Profile Card Slot */
+.home-profile {
+  flex: 0 0 auto;
+  width: 350px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .home-section {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .home-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+  
+  .home-profile {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hello-text {
+    font-size: 1.8rem;
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+  }
+  
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .home-content {
+    padding: 30px 20px;
+  }
+  
+  .cta-buttons .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}

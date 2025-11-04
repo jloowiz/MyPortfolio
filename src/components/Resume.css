@@ -1,0 +1,250 @@
+/* ========== Resume Section - Minimalistic with Connectors ========== */
+.resume-section {
+  position: relative;
+  padding: 80px 20px;
+  min-height: 100vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-content {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.resume-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--text-color);
+}
+
+.resume-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.resume-block {
+  position: relative;
+}
+
+.resume-block h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Education Styles with Timeline */
+.education-list {
+  position: relative;
+  padding-left: 30px;
+}
+
+.education-list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--text-color);
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 0;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 0.25rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 2px solid var(--text-color);
+}
+
+.education-item:hover::before {
+  background: var(--text-color);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.education-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  flex: 1;
+  line-height: 1.4;
+}
+
+.education-item .year {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+body.light-mode .education-item .year {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.education-item .institution {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.4;
+}
+
+body.light-mode .education-item .institution {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.edu-subtext {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.25rem 0 0 0;
+  line-height: 1.4;
+}
+
+body.light-mode .edu-subtext {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Certifications Styles with Timeline */
+.certifications-list {
+  position: relative;
+  padding-left: 30px;
+}
+
+.certifications-list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--text-color);
+}
+
+.certification-item {
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  transition: all 200ms ease;
+}
+
+.certification-item::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 0.4rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 2px solid var(--text-color);
+}
+
+.certification-item:hover {
+  transform: translateX(5px);
+}
+
+.certification-item:hover::before {
+  background: var(--text-color);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cert-name {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.cert-date {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+body.light-mode .cert-date {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.cert-subtext {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.25rem 0 0 0;
+  line-height: 1.4;
+}
+
+body.light-mode .cert-subtext {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-sections {
+    gap: 3rem;
+  }
+  
+  .resume-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .resume-block h3 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .education-list,
+  .certifications-list {
+    padding-left: 25px;
+  }
+  
+  .education-item::before,
+  .certification-item::before {
+    left: -30px;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .edu-header,
+  .cert-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .education-item .year,
+  .cert-date {
+    white-space: normal;
+  }
+}
