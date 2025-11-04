@@ -183,7 +183,7 @@ body.light-mode .highlight-item:hover {
 }
 
 body.light-mode .tilt-container::before {
-  background: linear-gradient(135deg, #667eea 0%, #9330f7 100%);
+  background: linear-gradient(135deg, #606061 0%, #292929 100%);
   opacity: 0.2;
 }
 
