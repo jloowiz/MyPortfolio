@@ -41,11 +41,10 @@ function Projects() {
       githubLink: 'https://github.com/jloowiz/CineMust.git',
       liveLink: 'https://www.youtube.com/watch?v=YnUHhwb-Q-g',
       features: [
-        'Shopping Cart & Checkout',
-        'Stripe Payment Integration',
-        'Admin Dashboard',
-        'Product Management',
-        'Order Tracking System'
+        'Signup and Login System',
+        'Editing profile and Preferences',
+        'Streaming and Playback',
+        'Video Search and Filtering',
       ]
     },
     {
