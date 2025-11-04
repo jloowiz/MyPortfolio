@@ -51,17 +51,17 @@ function Projects() {
     {
       id: 3,
       title: 'JeepWay',
-      description: 'A mobile-responsive portfolio website with modern animations and interactive elements to showcase creative work.',
-      fullDescription: 'A stunning portfolio website that showcases creative work with style and sophistication. Built with modern web technologies, this project features smooth animations powered by GSAP, interactive elements that engage visitors, and a fully responsive design. The website includes sections for projects, skills, about, and contact information, all tied together with a cohesive design language and seamless navigation.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP'],
-      githubLink: 'https://github.com/yourusername/project-three',
-      liveLink: 'https://project-three.com',
+      description: 'JeepWay is a mobile application that provides jeepney route mapping, real-time location tracking, fare calculation, user reviews, and a discount system to enhance the commuting experience specifically in Angeles City.',
+      fullDescription: 'JeepWay is a mobile application designed to improve the commuting experience in Angeles City by providing essential features for jeepney passengers. The app offers jeepney route mapping, allowing users to easily find their way around the city. Real-time location tracking ensures that users are always aware of their jeepney\'s location, while fare calculation helps them estimate their travel costs. Additionally, the app includes a user review system, enabling passengers to share their experiences and rate their rides. To make commuting more affordable, JeepWay also features a discount and promo code system.',
+      technologies: ['Flutter', 'Dart',],
+      githubLink: '',
+      liveLink: '',
       features: [
-        'Modern Animations (GSAP)',
-        'Fully Responsive Design',
-        'Interactive UI Elements',
-        'Optimized Performance',
-        'Cross-browser Compatible'
+        'Jeepney Route Mapping',
+        'Real-time Location Tracking',
+        'Fare Calculation',
+        'User Reviews & Ratings',
+        'Discount and Promo Code System'
       ]
     },
   ];
