@@ -34,8 +34,7 @@ function About() {
               Hi! I’m a 4th-year Computer Science student at Holy Angel University, and a passionate developer. I have hands-on experience in modern web technologies, mobile app development, database management, and machine learning.
             </p>
             <p>
-              Since I started my journey in tech, I’ve been continuously learning and growing.
-              continuously learning and growing. I enjoy working on challenging projects 
+              Since I started my journey in tech, I’ve been continuously learning and growing. I enjoy working on challenging projects 
               that push me to expand my skills and deliver exceptional results.
             </p>
             <p>
