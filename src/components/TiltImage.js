@@ -15,8 +15,8 @@ function throttle(func, delay) {
 export const TiltImage = ({ src, alt, className }) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
-  const onMouseMove = useCallback(
-    throttle((e) => {
+  const onMouseMove = useCallback((e) => {
+    const throttledMove = throttle(() => {
       const card = e.currentTarget;
       const box = card.getBoundingClientRect();
       const x = e.clientX - box.left;
@@ -27,9 +27,10 @@ export const TiltImage = ({ src, alt, className }) => {
       const rotateY = (centerX - x) / 7;
 
       setRotate({ x: rotateX, y: rotateY });
-    }, 100),
-    []
-  );
+    }, 100);
+    
+    throttledMove();
+  }, []);
 
   const onMouseLeave = () => {
     setRotate({ x: 0, y: 0 });
