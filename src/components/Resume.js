@@ -114,7 +114,7 @@ function Resume() {
 
         {/* View Resume Button */}
         <motion.a 
-          href="https://drive.google.com/file/d/1ipo-XbYmV_Q4YtdTG7imBM5aN59j2ljH/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1m396XiihyXR5bT5xTbyPwFpX3O-xzaVy/view?usp=sharing" 
           target="_blank"
           rel="noopener noreferrer"
           className="download-resume-btn"
