@@ -19,8 +19,8 @@ function Contact() {
     },
     {
       type: 'Phone',
-      value: '+63 977 777 9230',
-      link: 'tel:+639777779230'
+      value: '+63 969 207 4368',
+      link: 'tel:+639692074368'
     },
     {
       type: 'Location',
