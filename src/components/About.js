@@ -1,16 +1,10 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import TiltImage from './TiltImage';
 import './About.css';
 
 function About() {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  });
-  
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
     <section id="about" className="about-section" ref={ref}>
